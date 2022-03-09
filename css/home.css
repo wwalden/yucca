@@ -1,1 +1,174 @@
 
+/* GENERAL */
+
+body {
+  margin: 0; padding: 0;
+  background-color: #2A2A2A;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+
+
+
+/* HEADER */
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+nav p {
+  margin: 0px 10px;
+  font-weight: 600;
+}
+
+
+
+/* TOP SECTION */
+
+#topsection {
+  height:1200px;
+}
+
+#topsection_logo {
+  align-self: center;
+  width: 500px;
+  margin: 0% calc(50% - 250px);
+}
+
+#topsection_cover h2 {
+  font-size: 1.8em;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#topsection_cover_img {
+  width: 100%;
+  object-fit: fill;
+  position: absolute;
+}
+
+#topsection_cover_text {
+  animation: fading infinite 6s linear;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* MAIN SECTION */
+
+#mainsection {
+  height:1000px;
+  background-image: url("../asset/background.jpg");
+  /* background-size: cover; */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  padding: 40px 0px 0px 60px;
+}
+
+.mainsection_div {
+  min-height: 400px;
+}
+
+.mainsection_div div {
+  position: absolute;
+  z-index: 999;
+  padding: 10px 0px 0px 20px;
+}
+
+#mainsection_width450 {
+  width: 450px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#mainsection_div_doc_img {
+  width: 412px;
+  height: 497px;
+  position: absolute;
+  box-shadow: 2px 3px 5px #cccccc;
+  border-radius: 5px;
+}
+
+
+
+/* US SECTION */
+
+#ussection_div {
+  height: 1000px;
+  padding-top: 40px;
+  width: 70%;
+  margin: 30px 15%;
+  border-top: wheat 2px solid;
+  border-bottom: wheat 2px solid;
+}
+
+#ussection_div h2 {
+  text-align: center;
+}
+
+#ussection_div p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#ussection_div_img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  opacity: 0.3;
+  position: absolute;
+}
+
+form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.icon {
+  font-size: 2.2em;
+  margin: 30px 10px;
+}
+
+a { 
+  color: inherit;
+  text-decoration:none;
+} 
