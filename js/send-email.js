@@ -1,3 +1,3 @@
-const sendEmail = (event) => {   
-  window.open('mailto:test@example.com')
+const sendEmail = () => {   
+  window.open('mailto:contact@yucca-films.com')
 }
