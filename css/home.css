@@ -39,7 +39,7 @@ nav p {
 /* TOP SECTION */
 
 #topsection {
-  height:1200px;
+  height: auto;
 }
 
 #topsection_logo {
@@ -50,14 +50,19 @@ nav p {
 
 #topsection_cover h2 {
   font-size: 1.8em;
-  text-align: center;
   padding-top: 50px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 #topsection_cover_img {
   width: 100%;
   object-fit: fill;
-  position: absolute;
+  /* position: absolute; */
 }
 
 #topsection_cover_text {
@@ -90,7 +95,7 @@ nav p {
 
 #mainsection {
   height:1000px;
-  background-image: url("../asset/background.jpg");
+  /* background-image: url("../asset/background.jpg"); */
   /* background-size: cover; */
   background-position: center;
   /* background-repeat: no-repeat; */
