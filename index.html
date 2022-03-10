@@ -20,10 +20,16 @@
 
   <body>
     <header>
+      <div id="header_socials">
+        <a title="insta" target="_blank" href="https://www.instagram.com/yucca_films/"><i class="icon fa-brands fa-instagram"></i></a>
+        <a title="facebook" target="_blank" href="https://www.facebook.com/yuccafilms"><i class="icon fa-brands fa-facebook-f"></i></a>
+        <a title="vimeo" target="_blank" href="https://vimeo.com/yuccafilms"><i class="icon fa-brands fa-vimeo-v"></i></a>
+        <a title="youtube" target="_blank" href="https://www.youtube.com/channel/UC3pGTPYhQpwGKszgcLCXKJw/videos?view=0&sort=da"><i class="icon fa-brands fa-youtube"></i></a>
+      </div>
       <nav>
-        <p>Home</p>
-        <p>Team</p>
-        <p>Contact</p>
+        <p><a href="#">Home</a></p>
+        <p><a href="#ussection_div">Team</a></p>
+        <p><a class="hover" onclick="sendEmail()">Contact</a></p>
       </nav>
     </header>
 
@@ -64,10 +70,9 @@
           Chacun de nos projets sont uniques, et c’est en s’entourant de nombreux talents que nous devons nos plus belles réalisations.
           Réalisateurs, Caméramans, compositeurs, sound designers, opérateurs drone, motion designers…</p>
       </div>
-      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-        <input type="submit" value="Dites-nous tout">
-      </form>
-      
+      <div class="flex_center">
+        <button id="contactus" onclick="sendEmail()" class="hover button-12">Dites-nous tout... <i class="fas fa-paper-plane"></i></button>
+      </div>
     </section>
 
     <footer>
@@ -77,11 +82,21 @@
         <a title="vimeo" target="_blank" href="https://vimeo.com/yuccafilms"><i class="icon fa-brands fa-vimeo-v"></i></a>
         <a title="youtube" target="_blank" href="https://www.youtube.com/channel/UC3pGTPYhQpwGKszgcLCXKJw/videos?view=0&sort=da"><i class="icon fa-brands fa-youtube"></i></a>
       </div>
-      <div>
+      <div class="flex_center">
+        <p>from the  <i class="smallicon fas fa-mountain"></i></p>
         <p>© 2022 Yucca Films</p>
       </div>
     </footer>
 
     <script src="./js/title-anim.js"></script>
+    <script src="./js/send-email.js"></script>
   </body>
 </html>
+
+
+
+
+<!-- 
+<form id="contactus" action="mailto:someone@example.com" method="post" enctype="text/plain">
+  <input class="hover button-12" type="submit" value="Dites-nous tout">
+</form> -->
