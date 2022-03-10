@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <title>Yucca Films</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <!-- CSS -->
     <link href="css/home.css" rel="stylesheet" type="text/css" />
 
@@ -28,7 +31,7 @@
       </div>
       <nav>
         <p><a href="#">Home</a></p>
-        <p><a href="#mainsection_div">Realisations</a></p>
+        <p><a href="#mainsection">Realisations</a></p>
         <p><a href="#ussection_div">Team</a></p>
         <p><a class="hover" onclick="sendEmail()">Contact</a></p>
       </nav>
@@ -43,26 +46,37 @@
     </section>
 
     <section class="black" id="mainsection">
-      <div class="mainsection_div">
-        <img class="mainsection_div_doc_img" src="asset/running.jpg" alt="trailer dans les montagnes"/>
-        <div>
+
+      <div id="mainsection_brand_title">
+        <img class="mainsection_div_img" src="asset/running.jpg" alt="trailer dans les montagnes"/>
+        <div class="mainsection_div">
           <h2>BRAND</h2>
           <p id="mainsection_width450">Nous ne venons pas du film documentaire pour rien, le story telling est notre force.
             Ecriture, direction artistique, réalisation, nous produisons des films publicitaires et des contenus digitaux pour les principaux acteurs de la montagne et du sport.</p>
         </div>
       </div>
-      <div class="mainsection_div">
-        <img class="mainsection_div_doc_img" src="asset/draw.jpg" alt="dessin d'alpinistes encordés sur une arête"/>
-        <div>
+
+      <div id="mainsection_brand_carou" class="mainsection_div_carou">
+        <img class="placeholder" src="asset/placeholder.png" alt=""/>
+      </div>
+      
+      <div id="mainsection_doc_title">
+        <img class="mainsection_div_img" src="asset/draw.jpg" alt="dessin d'alpinistes encordés sur une arête"/>
+        <div class="mainsection_div">
           <h2>DOCUMENTAIRES</h2>
           <p>Ceci est notre adn.</p>
         </div>
       </div>
+
+      <div id="mainsection_doc_carou" class="mainsection_div_carou">
+        <img class="placeholder" src="asset/placeholder.png" alt=""/>
+      </div>
+
     </section>
 
     <section id="ussection">
       <img id="ussection_div_img" src="asset/cam.jpg" alt="appareil photo"/>
-      <div id="ussection_div">
+      <div id="ussection_text">
         <h2>NOUS</h2>
         <p>Yucca Films est une société de production et de réalisation basée à Chamonix depuis 2016.
   
@@ -73,6 +87,11 @@
           
           Chacun de nos projets sont uniques, et c’est en s’entourant de nombreux talents que nous devons nos plus belles réalisations.
           Réalisateurs, Caméramans, compositeurs, sound designers, opérateurs drone, motion designers…</p>
+          <div id="ussection_pics">
+            <img class="profile_pics" src="asset/tom.jpg" alt=""/>
+            <img class="profile_pics" src="asset/pierre.jpg" alt=""/>
+
+          </div>
       </div>
       <div class="flex_center extra-top-margin">
         <button id="contactus" onclick="sendEmail()" class="hover button-12">Dites-nous tout... <i class="fas fa-paper-plane"></i></button>
@@ -92,7 +111,7 @@
       </div>
     </footer>
 
-    <script src="./js/title-anim.js"></script>
+    <script defer src="./js/title-anim.js"></script>
     <script src="./js/send-email.js"></script>
   </body>
 </html>
