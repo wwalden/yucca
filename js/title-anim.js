@@ -14,3 +14,38 @@ const changeSubtitle = () => {
 
 
 setInterval(changeSubtitle, 3000)
+
+
+
+
+
+const slideAnimPrev = () => {
+  for (i=1;i<=6;i++) {
+  document.querySelector(`.box${i}`).classList.add('animaprev')
+  }
+
+  setTimeout(function() {
+    for (i=1;i<=6;i++) {
+      document.querySelector(`.box${i}`).classList.remove('animaprev')
+    }}, 1200)
+  
+}
+
+
+
+
+const slideAnimNext = () => {
+  for (i=1;i<=6;i++) {
+  document.querySelector(`.box${i}`).classList.add('animanext')
+  }
+  document.querySelector(`.box0`).classList.add('animaborn')
+
+  setTimeout(function() {
+    for (i=1;i<=6;i++) {
+      document.querySelector(`.box${i}`).classList.remove('animanext')
+    }
+    document.querySelector(`.box0`).classList.remove('animaborn')
+  }, 1200)
+    
+
+}
