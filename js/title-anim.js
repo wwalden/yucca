@@ -40,7 +40,7 @@ const slideAnimPrev = () => {
     document.querySelector(`.box${length-1}`).innerHTML = content[0]
   
   
-  }, 1000)
+  }, 800)
   
 }
 
@@ -93,7 +93,7 @@ const slideAnimNext = () => {
     document.querySelector(`.box0`).innerHTML = content6
 */
   
-  }, 1000)
+  }, 800)
     
 }
 
