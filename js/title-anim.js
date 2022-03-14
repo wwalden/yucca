@@ -15,19 +15,32 @@ const changeSubtitle = () => {
 
 setInterval(changeSubtitle, 3000)
 
-
+length = 5;
 
 
 
 const slideAnimPrev = () => {
-  for (i=1;i<=6;i++) {
+  for (i=0;i<=length-1;i++) {
   document.querySelector(`.box${i}`).classList.add('animaprev')
   }
 
   setTimeout(function() {
-    for (i=1;i<=6;i++) {
+    for (i=0;i<=length-1;i++) {
       document.querySelector(`.box${i}`).classList.remove('animaprev')
-    }}, 1200)
+    }
+  
+    const content = []
+    for (i=0; i<length; i++) {
+      content.push(document.querySelector(`.box${i}`).innerHTML)
+    }
+
+    for (i=0; i<length-1; i++) {
+      document.querySelector(`.box${i}`).innerHTML = content[i+1]
+    }
+    document.querySelector(`.box${length-1}`).innerHTML = content[0]
+  
+  
+  }, 1000)
   
 }
 
@@ -35,17 +48,34 @@ const slideAnimPrev = () => {
 
 
 const slideAnimNext = () => {
-  for (i=1;i<=6;i++) {
+ // meaning 7 elements from 0 to 6...
+
+  for (i=0;i<=length-1;i++) {
   document.querySelector(`.box${i}`).classList.add('animanext')
   }
-  document.querySelector(`.box0`).classList.add('animaborn')
+  // document.querySelector(`.box0`).classList.add('animaborn')
 
   setTimeout(function() {
-    for (i=1;i<=6;i++) {
+    for (i=0;i<=length-1;i++) {
       document.querySelector(`.box${i}`).classList.remove('animanext')
     }
-    document.querySelector(`.box0`).classList.remove('animaborn');
+    // document.querySelector(`.box0`).classList.remove('animaborn');
     
+
+
+    // SLIDER UPDATE FUNCTION
+
+    const content = []
+    for (i=0; i<length; i++) {
+      content.push(document.querySelector(`.box${i}`).innerHTML)
+    }
+
+    for (i=1; i<length; i++) {
+      document.querySelector(`.box${i}`).innerHTML = content[i-1]
+    }
+    document.querySelector(`.box0`).innerHTML = content[length-1]
+
+/*
     const content0 =  document.querySelector(`.box0`).innerHTML
     const content1 =  document.querySelector(`.box1`).innerHTML
     const content2 =  document.querySelector(`.box2`).innerHTML
@@ -61,6 +91,7 @@ const slideAnimNext = () => {
     document.querySelector(`.box5`).innerHTML = content4
     document.querySelector(`.box6`).innerHTML = content5
     document.querySelector(`.box0`).innerHTML = content6
+*/
   
   }, 1000)
     
