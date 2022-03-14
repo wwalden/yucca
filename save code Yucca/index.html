@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- character type changed -->
+    <meta charset="utf-8" />
+    <title>Yucca Films</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS -->
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+    <!-- Responsive CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1ad64a8a63.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="header_socials">
+        <a title="insta" target="_blank" href="https://www.instagram.com/yucca_films/"><i class="icon fa-brands fa-instagram"></i></a>
+        <a title="facebook" target="_blank" href="https://www.facebook.com/yuccafilms"><i class="icon fa-brands fa-facebook-f"></i></a>
+        <a title="vimeo" target="_blank" href="https://vimeo.com/yuccafilms"><i class="icon fa-brands fa-vimeo-v"></i></a>
+        <a title="youtube" target="_blank" href="https://www.youtube.com/channel/UC3pGTPYhQpwGKszgcLCXKJw/videos?view=0&sort=da"><i class="icon fa-brands fa-youtube"></i></a>
+      </div>
+      <nav>
+        <p><a href="#">Home</a></p>
+        <p><a href="#mainsection">Realisations</a></p>
+        <p><a href="#ussection_div">Team</a></p>
+        <p><a class="hover" onclick="sendEmail()">Contact</a></p>
+      </nav>
+    </header>
+
+    <section id="topsection">
+      <img id="topsection_logo" src="asset/images/logo.png" alt="Yucca Films Logo"/>
+      <div id="topsection_cover">
+        <h2 id="topsection_cover_text">Raconter les histoires d’en haut...</h2>
+        <img id="topsection_cover_img" src="asset/images/cover.jpg" alt="skieur marchant dans un tunnel de glace"/>
+      </div>
+    </section>
+
+
+    <section id="mainsection">
+        <div class="slider">
+          <!-- <div class="box0">0</div> -->
+          <!-- <div class="box box0">
+            <img src="asset/projects/brand/Cham.png" />
+          </div> -->
+          <div class="box box0">
+            <h2>NOCTA</h2>
+            <img src="asset/projects/brand/Nocta.jpg" />
+          </div>
+          <div class="box box1">
+            <img src="asset/projects/brand/3vallees.png" />
+          </div>
+          <div class="box box2">
+            <h2>LÉO</h2>
+            <img src="asset/projects/brand/Leo.jpg" />
+          </div>
+          <div class="box box3">
+            <img src="asset/projects/brand/Cham.png" />
+          </div>
+          <div class="box box4">
+            <h2>LYO FOOD</h2>
+            <img src="asset/projects/brand/LyoFood.png" />
+          </div>
+          <!-- <div class="box box5">5</div>
+          <div class="box box6">6</div> -->
+        </div>
+        <div class="flex_spcbetween">
+          <i onclick="slideAnimPrev()" class="fa-solid fa-circle-arrow-left slider_icon left"></i>
+          <i onclick="slideAnimNext()"class="fa-solid fa-circle-arrow-right slider_icon right"></i>
+        </div>
+    </section>
+
+
+<!-- 
+    <section class="black" id="mainsection">
+
+      <div id="mainsection_brand_title">
+        <img class="mainsection_div_img" src="asset/images/running.jpg" alt="trailer dans les montagnes"/>
+        <div class="mainsection_div">
+          <h2>BRAND</h2>
+          <p id="mainsection_width450">Nous ne venons pas du film documentaire pour rien, le story telling est notre force.
+            Ecriture, direction artistique, réalisation, nous produisons des films publicitaires et des contenus digitaux pour les principaux acteurs de la montagne et du sport.</p>
+        </div>
+      </div>
+
+      <div id="mainsection_brand_carou" class="mainsection_div_carou">
+        <img class="placeholder" src="asset/images/placeholder.png" alt=""/>
+      </div>
+      
+      <div id="mainsection_doc_title">
+        <img class="mainsection_div_img" src="asset/images/draw.jpg" alt="dessin d'alpinistes encordés sur une arête"/>
+        <div class="mainsection_div">
+          <h2>DOCUMENTAIRES</h2>
+          <p>Ceci est notre adn.</p>
+        </div>
+      </div>
+
+      <div id="mainsection_doc_carou" class="mainsection_div_carou">
+        <img class="placeholder" src="asset/images/placeholder.png" alt=""/>
+      </div>
+
+    </section>
+ -->
+
+
+
+    <section id="ussection">
+      <img id="ussection_div_img" src="asset/images/cam.jpg" alt="appareil photo"/>
+      <div id="ussection_text">
+        <h2>NOUS</h2>
+        <p>Yucca Films est une société de production et de réalisation basée à Chamonix depuis 2016.
+  
+          C’est avant tout une association de 2 réalisateurs et montagnards qui apportent leur expertise dans le monde de l’outdoor afin de mettre en avant une nature forte et des personnalités hors du commun.
+          Le savoir-faire découle d’une connaissance du milieu, d’une sensibilité accrue à la nature, aux lumières et aux Hommes. 
+          
+          Sollicités par les principaux acteurs de l’industrie du sport, nous produisons films documentaires, films d’aventures, campagnes publicitaires et contenus digitaux. 
+          
+          Chacun de nos projets sont uniques, et c’est en s’entourant de nombreux talents que nous devons nos plus belles réalisations.
+          Réalisateurs, Caméramans, compositeurs, sound designers, opérateurs drone, motion designers…</p>
+          <div id="ussection_pics">
+            <img class="profile_pics" src="asset/images/tom.jpg" alt=""/>
+            <img class="profile_pics" src="asset/images/pierre.jpg" alt=""/>
+
+          </div>
+      </div>
+      <div class="flex_center extra-top-margin">
+        <button id="contactus" onclick="sendEmail()" class="hover button-12">Dites-nous tout... <i class="fas fa-paper-plane"></i></button>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer_socials">
+        <a title="insta" target="_blank" href="https://www.instagram.com/yucca_films/"><i class="icon fa-brands fa-instagram"></i></a>
+        <a title="facebook" target="_blank" href="https://www.facebook.com/yuccafilms"><i class="icon fa-brands fa-facebook-f"></i></a>
+        <a title="vimeo" target="_blank" href="https://vimeo.com/yuccafilms"><i class="icon fa-brands fa-vimeo-v"></i></a>
+        <a title="youtube" target="_blank" href="https://www.youtube.com/channel/UC3pGTPYhQpwGKszgcLCXKJw/videos?view=0&sort=da"><i class="icon fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="flex_center">
+        <p>© 2022 Yucca Films</p>
+        <p>made in the  <i class="smallicon fas fa-mountain"></i></p>
+      </div>
+    </footer>
+
+    <script defer src="./js/title-anim.js"></script>
+    <script src="./js/send-email.js"></script>
+  </body>
+</html>
+
+
+
+
+<!-- 
+<form id="contactus" action="mailto:someone@example.com" method="post" enctype="text/plain">
+  <input class="hover button-12" type="submit" value="Dites-nous tout">
+</form> -->
