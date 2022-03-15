@@ -76,7 +76,8 @@ nav p {
 }
 
 
-/* MAIN SECTION NEW */
+
+/* MAIN SECTION */
 
 #mainsection {
   height: 1100px;
@@ -97,101 +98,12 @@ nav p {
 
 
 
-
-
-/*
-
-MAIN SECTION OLD
-
-#mainsection {
-  height:1400px;
-  NOT USED background-image: url("../asset/images/background.jpg");
-  NOT USED  background-size: cover;
-  NOT USED  background-position: center;
-  NOT USED  background-repeat: no-repeat;
-
-  width: calc(100% - 120px);
-  margin: 30px 40px;
-  display: grid;
-
-  grid-template-columns: 34% 66%;
-  grid-template-rows: 650px 650px;
-  column-gap: 40px;
-  row-gap: 40px;
-}
-
-#mainsection_brand_title {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-#mainsection_brand_carou {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-#mainsection_doc_title {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-#mainsection_doc_carou {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-
-.placeholder {
-  object-fit: cover;
-  height: 600px;
-  width: 100%;
-  opacity: 0.6;
-  border-radius: 5px;
-
-}
-
-.mainsection_div {
-  position: absolute;
-  z-index: 999;
-  padding: 10px 0px 0px 20px;
-}
-
-#mainsection_width450 {
-  width: 450px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.mainsection_div_img {
-  width: 500px;
-  height: 600px;
-  position: absolute;
-  object-fit: cover;
-  box-shadow: 1px 2px 3px #7c7c7c;
-  border-radius: 5px;
-}
-
-.black {
-  color: hsl(0, 0%, 0%, 0.8);
-}
-
-.mainsection_div_carou {
-  width: 100%;
-  height: 600px;
-  box-shadow: 1px 2px 3px #7c7c7c;
-  border-radius: 5px;
-
-} */
-
-
-
 /* US SECTION */
 
 #ussection_text {
   height: 1000px;
   padding-top: 40px;
   margin-top: 30px;
-  /* border-bottom: #cccccc 2px solid; */
 }
 
 #ussection_text h2 {
@@ -217,7 +129,6 @@ MAIN SECTION OLD
   position: absolute;
 }
 
-
 #ussection_pics {
   display: flex;
   flex-direction: row;
@@ -226,24 +137,11 @@ MAIN SECTION OLD
   width: 100%;
 }
 
-
 .profile_pics {
   z-index: 999;
   width: 50%;
   object-fit: cover;
 }
-
-/* form {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-input {
-  border-radius: 5px;
-  padding: 5px;
-} */
-
 
 .button-12 {
   text-align: center;
@@ -265,7 +163,6 @@ input {
   box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
 }
-
 
 
 
