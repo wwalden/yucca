@@ -16,13 +16,13 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 nav p {
@@ -48,57 +48,51 @@ nav p {
 
 #topsection_logo {
   align-self: center;
-  width: 500px;
-  margin: 0% calc(50% - 250px);
+  width: 350px;
+  margin: 0% calc(50% - 175px);
+}
+
+#topsection_cover {
+  height: 830px;
 }
 
 #topsection_cover h2 {
-  font-size: 1.8em;
-  padding-top: 50px;
-  position: absolute;
+  font-size: 1.3em;
+  font-weight: 300;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
-  right: 0;
   text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
 #topsection_cover_img {
   width: 100%;
-  object-fit: fill;
-  /* position: absolute; */
-}
-
-#topsection_cover_text {
-  animation: fading infinite 3s linear;
-}
-
-@keyframes fading {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  max-height: 780px !important;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  top: 200px;
 }
 
 
 /* MAIN SECTION NEW */
 
 #mainsection {
-  height: 800px;
+  height: 1100px;
+}
+
+.mainsection_div {
+  margin: 40px 40px 10px 40px;
+}
+
+.mainsection_div h2 {
+  font-size: 2em;
+}
+
+.mainsection_div p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
 }
 
 
@@ -204,13 +198,15 @@ MAIN SECTION OLD
   text-align: center;
   width: 60%;
   margin: 0px 20%;
+  font-size: 2em;
 }
 
 #ussection_text p {
   text-align: center;
-  width: 60%;
-  margin: 20px 20%;
-  /* text-justify: inter-word; */
+  width: 80%;
+  margin: 20px 10%;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
 }
 
 #ussection_div_img {
@@ -255,6 +251,7 @@ input {
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   border-radius: 6px;
   border: none;
+  z-index: 1;
 
   background: #6E6D70;
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
