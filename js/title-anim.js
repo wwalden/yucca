@@ -2,6 +2,13 @@
 const length = 5;
 
 const slideAnimPrev = () => {
+  // Désactiver le boutton le temps de l'animation
+  document.querySelector(`.button1`).disabled = true;
+  setTimeout(function() {
+    document.querySelector(`.button1`).disabled = false;
+  }, 800);
+
+  // Jeu de classes pour le slider
   for (i=0;i<=length-1;i++) {
   document.querySelector(`.box${i}`).classList.add('animaprev')
   }
@@ -17,10 +24,17 @@ const slideAnimPrev = () => {
       document.querySelector(`.box${i}`).innerHTML = content[i+1]
     }
     document.querySelector(`.box${length-1}`).innerHTML = content[0]
-  }, 1000)
+  }, 780)
 }
 
 const slideAnimNext = () => {
+  // Désactiver le boutton le temps de l'animation
+  document.querySelector(`.button2`).disabled = true;
+  setTimeout(function() {
+    document.querySelector(`.button2`).disabled = false;
+  }, 800);
+
+  // Jeu de classes pour le slider
   for (i=0;i<=length-1;i++) {
   document.querySelector(`.box${i}`).classList.add('animanext')
   }
@@ -36,7 +50,7 @@ const slideAnimNext = () => {
       document.querySelector(`.box${i}`).innerHTML = content[i-1]
     }
     document.querySelector(`.box0`).innerHTML = content[length-1]
-  }, 1000)
+  }, 780)
 }
 
 

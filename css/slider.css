@@ -1,28 +1,36 @@
+.slider_container {
+  height: 500px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
 .slider {
-  height: 400px;
+  height: 340px;
   display: flex;
   align-items: center;
-  overflow: hidden;
-  margin-left: -500px;
-
+  margin-left: -680px;
+  width: 180%;
 }
 
 .box {
   height: 300px;
-  min-width: 400px !important;
-  margin: 0px 20px 20px 20px;
+  width: 600px;
+  margin: 0px 10px 20px 10px;
   border-radius: 20px;
   overflow: hidden;
   color: white;
   font-size: 2em;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .box img {
   height: 300px;
-  width: 400px;
+  width: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .box h2 {
@@ -30,6 +38,10 @@
   align-self: center;
 }
 
+.box_content {
+  display: flex;
+  justify-content: center;
+}
 
 
 /* ICONS */
@@ -38,22 +50,24 @@
   font-size: 4em;
   color: rgb(197, 197, 197);
   opacity: 0.8;
-  position: absolute;
-  bottom: -540px;
 }
 
 .slider_icon:hover {
-  font-size: 5em;
+  font-size: 4.8em;
   color: grey;
   opacity: 1;
+  cursor: pointer;
 }
 
-.left {
-  left: 20px;
+.flex-spcbtw {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
 }
 
-.right {
-  right: 20px;
+.button1, .button2 {
+  border: none;
+  background-color: #2A2A2A;
 }
 
 
@@ -61,7 +75,7 @@
 /* ANIMATIONS */
 
 .animaprev {
-  animation: slideprev 1s ease-in-out;
+  animation: slideprev 0.8s ease-in-out;
 }
 
 @keyframes slideprev{
@@ -69,13 +83,13 @@
      transform: translate(0px)
   }
   100% {
-     transform: translate(-440px);
+     transform: translate(-605px);
   }
 }
 
 
 .animanext {
-  animation: slidenext 1s ease-in-out;
+  animation: slidenext 0.8s ease-in-out;
 }
 
 @keyframes slidenext{
@@ -83,6 +97,6 @@
      transform: translate(0px)
   }
   100% {
-     transform: translate(440px);
+     transform: translate(605px);
   }
 }

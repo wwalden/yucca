@@ -35,13 +35,15 @@
     <section id="topsection">
       <img id="topsection_logo" src="asset/images/logo.png" alt="Yucca Films Logo"/>
       <div id="topsection_cover">
-        <h2>Raconter les histoires d’en haut...</h2>
-        <h2>Capturer des images dans des conditions difficiles.</h2>
-        <h2>Faire du cinéma là où le cinema n’a pas sa place.</h2>
-        <h2>Être au plus proche de la vérité, de la réalité, votre réalité.</h2>
-        <h2>Ecrire, Réaliser, filmer pour raconter comment l’humain repousse ses limites, s’exprime et interagit avec la nature.</h2>
-        <h2>Nous sommes Yucca Films</h2>
         <img id="topsection_cover_img" src="asset/images/cover.jpg" alt="skieur marchant dans un tunnel de glace"/>
+        <div>
+          <h2>Raconter les histoires d’en haut...</h2>
+          <h2>Capturer des images dans des conditions difficiles.</h2>
+          <h2>Faire du cinéma là où le cinema n’a pas sa place.</h2>
+          <h2>Être au plus proche de la vérité, de la réalité, votre réalité.</h2>
+          <h2>Ecrire, Réaliser, filmer pour raconter comment l’humain repousse ses limites, s’exprime et interagit avec la nature.</h2>
+          <h2>Nous sommes Yucca Films</h2>
+        </div>
       </div>
     </section>
 
@@ -54,38 +56,48 @@
           Ecriture, direction artistique, réalisation, nous produisons des films publicitaires et des contenus digitaux pour les principaux acteurs de la montagne et du sport.</p>
       </div>
       <div class="slider_container">
-        <i onclick="slideAnimPrev()" class="fa-solid fa-circle-arrow-left slider_icon left"></i>
-        <i onclick="slideAnimNext()"class="fa-solid fa-circle-arrow-right slider_icon right"></i>
-          <div class="slider">
-            <div class="box box0">
+        <div class="slider">
+          <div class="box box0">
+            <a href="./pages/brand/nocta.html" target="_blank" class="box_content">
               <h2>NOCTA</h2>
               <img src="asset/projects/brand/Nocta.jpg" />
-            </div>
-            <div class="box box1">
-              <img src="asset/projects/brand/3vallees.png" />
-            </div>
-            <div class="box box2">
-              <a href="./pages/brand/leo.html" target="_blank">
-                <h2>LÉO</h2>
-                <img src="asset/projects/brand/Leo.jpg" />
-              </a>
-            </div>
-            <div class="box box3">
-              <img src="asset/projects/brand/Cham.png" />
-            </div>
-            <div class="box box4">
+            </a>
+          </div>
+          <div class="box box1">
+            <img src="asset/projects/brand/3vallees.png" />
+          </div>
+          <div class="box box2">
+            <a href="./pages/brand/leo.html" target="_blank" class="box_content">
+              <h2>LÉO</h2>
+              <img src="asset/projects/brand/Leo.jpg" />
+            </a>
+          </div>
+          <div class="box box3">
+            <img src="asset/projects/brand/Cham.png" />
+          </div>
+          <div class="box box4">
+            <a href="./pages/brand/lyofood.html" target="_blank" class="box_content">
               <h2>LYO FOOD</h2>
               <img src="asset/projects/brand/LyoFood.png" />
-            </div>
+            </a>
           </div>
         </div>
+        <div class="flex-spcbtw">
+          <button class="button1" onclick="slideAnimPrev()">
+            <i class="fa-solid fa-circle-arrow-left slider_icon left"></i>
+          </button>
+          <button class="button2" onclick="slideAnimNext()">
+            <i class="fa-solid fa-circle-arrow-right slider_icon right"></i>
+          </button>
+        </div>
+      </div>
 
       <!-- SECOND SLIDER -->
       <div class="mainsection_div">
         <h2>DOCUMENTAIRES</h2>
         <p>Ceci est notre ADN.</p>
       </div>
-      <div class="slider_container">
+      <!-- <div class="slider_container">
         <i onclick="slideAnimPrev()" class="fa-solid fa-circle-arrow-left slider_icon left"></i>
         <i onclick="slideAnimNext()"class="fa-solid fa-circle-arrow-right slider_icon right"></i>
           <div class="slider">
@@ -108,7 +120,7 @@
               <img src="asset/projects/brand/LyoFood.png" />
             </div>
           </div>
-        </div>
+        </div> -->
     </section>
 
     <section id="ussection">
@@ -135,6 +147,7 @@
           <img class="profile_pics" src="asset/images/tom.jpg" alt=""/>
           <img class="profile_pics" src="asset/images/pierre.jpg" alt=""/>
         </div>
+        <a href="#topsection">up</a>
       </div>
     </section>
 
