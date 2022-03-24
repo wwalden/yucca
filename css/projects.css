@@ -1,15 +1,46 @@
+
+.project_brand {
+  margin-left: 25%;
+  color: grey
+}
+
+
+h1 {
+  font-size: 48px;
+  margin: 10px 0px;
+}
+
+
 .project_content {
   margin: 130px 170px 80px 170px;
   font-family: 'Playfair Display', serif;
   font-size: 1.2em;
 }
 
-.project_picture {
-  width: 100%;
-}
-
 .project_credits {
   margin: 60px 170px 100px 170px;
   font-family: 'Playfair Display', serif;
   font-size: 1.2em;
+}
+
+.project_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project_picture_leo {
+  width: 100%;
+}
+
+.project_picture_nocta {
+  width: 80%;
+  margin: 20px 0px;
+}
+
+.video, .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
 }
