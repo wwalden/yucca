@@ -38,6 +38,12 @@ h1 {
   margin: 20px 0px;
 }
 
+.project_picture_cham {
+  width: 65%;
+  margin: 30px 0px;
+  opacity: 0.85;
+}
+
 .video, .title {
   display: flex;
   flex-direction: column;
