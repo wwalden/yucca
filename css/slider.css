@@ -10,14 +10,14 @@ body{
   height: 340px;
   display: flex;
   align-items: center;
-  margin-left: -680px;
-  width: 180%;
+  margin-left: -53vw;
+  width: 250%;
 }
 
 .box {
   height: 300px;
-  width: 600px;
-  margin: 0px 10px 20px 10px;
+  width: 33vw;
+  margin: 0px 0.5vw 20px 0.5vw;
   border-radius: 20px;
   overflow: hidden;
   color: white;
@@ -83,7 +83,7 @@ body{
      transform: translate(0px)
   }
   100% {
-     transform: translate(-605px);
+     transform: translate(-34vw);
   }
 }
 
@@ -97,6 +97,6 @@ body{
      transform: translate(0px)
   }
   100% {
-     transform: translate(605px);
+     transform: translate(34vw);
   }
 }

@@ -1,5 +1,5 @@
 
-const length = 5;
+const length = 6;
 
 const slideAnimPrev = () => {
   // Désactiver le boutton le temps de l'animation
